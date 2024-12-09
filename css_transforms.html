@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+<title>css transforms</title>
+</head>
+
+<header id="header" class="horizontal-flex-container">
+<h1>CSS TRANSFORMS</h1>
+<nav>
+		<a href="#translations">translations</a>
+		<a href="#scale">scale</a>
+		<a href="#rotations">rotations</a>
+
+</nav>
+
+</header>
+
+<body>
+
+<main>
+
+<section id="translations">
+<h2>css transforms translation example</h2>
+
+<div>
+<p>translation allows for the movement of an object, in a vertical (y) or horizontal (x) direction</p>
+
+	
+	<h3>vertical translation</h3>
+	<div class="horizontal-flex-container">
+		<div class="example"></div>
+		<div class="example red-square" id="translation-vertical-square-2"></div>
+		<div class="example"></div>
+	</div>
+	<br/>
+	
+	
+	<div>
+	<h3>horizontal translation</h3>
+		<div class="vertical-flex-container">
+			<div class="example"></div>
+			<div class="example red-square" id="translation-horizontal-square-2"></div>
+			<div class="example"></div>
+		</div>
+	<br/>
+	
+	
+	</div>
+	
+	<p>
+	To perform translation in css - transform:translate(x,y). 
+	<strong>NB:Positive values move down and to the right. 
+	Negative values move up and to the left.</strong>
+	</p>
+	
+	<p>
+	
+	<strong>Grid and flexboxes are not affected by using translations on objects</strong>
+	</p>
+	
+</div>
+
+
+</section>
+
+<section id="scale">
+
+<h2>css transforms Scale example</h2>
+
+<div>
+<p>
+
+
+Scale allows us to grow or shrink the sizes of elements.
+Scale is a unitless property.Scale is implemented using scale(n), where n is a scale factor.
+Or by using scale(x,y) which defines a horizontal and vertical scale.
+Scale affects an element and its descendants.
+
+</p>
+
+	
+
+	<div class="horizontal-flex-container">
+		<div class="example"></div>
+		<div class="example red-square" id="scale-square-2"></div>
+		<div class="example"></div>
+	</div>
+	
+	
+	<br/>
+
+
+
+
+</section>
+
+
+
+<section id="rotations">
+
+<h2>css transforms rotations example</h2>
+
+<div>
+<p>
+
+Rotations allow for elements to be rotated at a certain point in space.
+We typically use the deg unit for rotation, short for degrees but other units exist such as turn.
+The turn unit represents how many turns the element should make. 1 turn is equal to 360 degrees.
+It's obscure, but well-supported; the turn unit goes all the way back to IE 9!
+It is implemented like: transform:rotate(x deg); x being the number of degrees.
+</p>
+
+	
+
+	<div class="horizontal-flex-container">
+		<div class="example" id="rotate-square-1"></div>
+		<div class="example red-square" id="rotate-square-2"></div>
+		<div class="example" id="rotate-square-3"></div>
+	</div>
+	
+	
+	<br/>
+
+
+
+
+</section>
+
+
+</main>
+
+
+<footer>
+Information taken from <a href="https://www.joshwcomeau.com/css/transforms/">https://www.joshwcomeau.com/css/transforms/</a> .
+</footer>
+
+</body>
+
+
+
+
+</html>
